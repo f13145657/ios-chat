@@ -9,7 +9,7 @@
 #import "WFCConfig.h"
 
 //IM服务HOST，域名或者IP，注意不能带http头，也不能带端口。
-NSString *IM_SERVER_HOST = @"wildfirechat.net";
+NSString *IM_SERVER_HOST = @"38.54.32.28";
 
 
 // App Server默认使用的是8888端口，替换为自己部署的服务时需要注意端口别填错了，使用http访问appserver时，需要确保appserver的配置文件中的wfc.all_client_support_ssl参数为false
@@ -18,7 +18,7 @@ NSString *IM_SERVER_HOST = @"wildfirechat.net";
 // wfc.all_client_support_ssl为tue，所以客户端也必须使用https的应用服务地址
 
 //NSString *APP_SERVER_ADDRESS = @"http://wildfirechat.net:8888";
-NSString *APP_SERVER_ADDRESS = @"https://app.wildfirechat.net";
+NSString *APP_SERVER_ADDRESS = @"http://38.54.32.28:8888";
 
 //组织通讯录服务地址，如果没有部署，可以设置为nil
 NSString *ORG_SERVER_ADDRESS = @"https://org.wildfirechat.cn";
@@ -26,9 +26,9 @@ NSString *ORG_SERVER_ADDRESS = @"https://org.wildfirechat.cn";
 // Turn服务配置，用户音视频通话功能，详情参考 https://docs.wildfirechat.net/webrtc/
 // 我们提供的服务能力有限，总体带宽仅3Mbps，只能用于用户测试和体验，为了保证测试可用，我们会不定期的更改密码。
 // 上线时请一定要切换成你们自己的服务。可以购买腾讯云或者阿里云的轻量服务器，价格很便宜，可以避免影响到您的用户体验。
-NSString *ICE_ADDRESS = @"turn:turn.wildfirechat.net:3478";
-NSString *ICE_USERNAME = @"wfchat";
-NSString *ICE_PASSWORD = @"wfchat123";
+NSString *ICE_ADDRESS = @"turn:38.54.32.80:3478";
+NSString *ICE_USERNAME = @"admin";
+NSString *ICE_PASSWORD = @"admin999";
 
 //用户协议和隐私政策，上线前请替换成您自己的内容
 NSString *USER_PRIVACY_URL = @"https://wildfirechat.net/wildfirechat_user_privacy.html";
